@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Angel Paredes | Web Developer</title>
+    <script
+      src="https://kit.fontawesome.com/eeff875d20.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styleprojects.css" />
+    <link rel="stylesheet" href="stylemodal.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <div class="contenedor">
+      <nav class="navbar">
+        <button class="navbar-toggler" type="button">
+          <i class="fa-solid fa-bars-staggered fa-2x"></i>
+        </button>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="container-project">
+        <div class="titulo">
+          <h2>My <span>Projects</span></h2>
+        </div>
+
+        <div class="projects">
+          <div class="project">
+            <div class="image">
+              <img src="images/rickandmorty.png" />
+            </div>
+            <div class="info">
+              <h4>Rick & Morty Wiki</h4>
+              <p>Web App</p>
+              <div class="links">
+                <a class="hero__cta"><i class="fa-solid fa-circle-info"></i></a>
+                <a
+                  target="_blank"
+                  href="https://mlangelpl.github.io/RickAndMorty/inicio/home"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="modal">
+      <div class="modal__container">
+        <header>
+          <h2>Rick & Morty Wiki</h2>
+        </header>
+        <hr />
+        <div class="text">
+          <span>
+            <strong
+              ><i class="fa-solid fa-circle-check"></i> Description:</strong
+            >
+            Responsive website, which allows users to have relevant data about
+            characters from the Rick & Morty series. Therefore, it will be
+            possible to display information that can be handled by users, so
+            that they can filter it according to various specifications.</span
+          >
+        </div>
+
+        <div class="text">
+          <span>
+            <strong
+              ><i class="fa-solid fa-circle-check"></i> Technologies:</strong
+            >
+          </span>
+          <div class="container-tecno">
+            <div class="tecno">Angular</div>
+            <div class="tecno">Bootstrap</div>
+            <div class="tecno">CSS3</div>
+          </div>
+
+          <div class="links">
+            <a href="https://github.com/mlangelpl/RickAndMorty" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+        </div>
+
+        <hr />
+        <footer>
+          <a class="modal__close">Close</a>
+        </footer>
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,134 @@
+h2 {
+  font-size: 2rem;
+  color: #7192ce;
+  font-weight: bold;
+}
+
+/* About */
+.container-info {
+  background-color: rgba(21, 45, 53, 0.6);
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  color: white;
+  border-radius: 5px;
+  padding-right: 100px;
+}
+
+.info-text {
+  width: calc(50% - 100px);
+  margin: 80px 0 50px 100px;
+}
+.text {
+  margin-top: 60px;
+  width: 80%;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: justify;
+}
+.container-skills {
+  margin-top: 80px;
+  width: 50%;
+}
+
+.skills {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  width: 100%;
+}
+
+.skills div h2 {
+  margin-bottom: 40px;
+}
+
+.programas {
+  background-color: #1b1f1f;
+  width: 180px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  margin: 5px 10px 10px 10px;
+  border-radius: 10px;
+}
+.programas:hover {
+  background-color: #000000b3;
+  transition: 0.3s;
+}
+
+.programas img {
+  width: 40px;
+  margin-left: 10px;
+}
+.programas span {
+  margin-left: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.text span {
+  color: #5886de;
+}
+
+@media (max-width: 1400px) {
+  * {
+    overflow: auto;
+  }
+  .skills {
+    grid-template-columns: 50% 50%;
+  }
+  p {
+    overflow: hidden;
+  }
+  .programas {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container-info {
+    padding-right: 20px;
+  }
+  .info-text {
+    margin-left: 20px;
+    width: 50%;
+  }
+  .text {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .skills {
+    grid-template-columns: 100%;
+  }
+}
+
+@media (max-width: 750px) {
+  .container-info {
+    display: block;
+    padding-right: 0;
+  }
+  .info-text {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 0;
+  }
+  .text {
+    margin: auto;
+  }
+  .container-skills {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  .skills {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .programas {
+    margin: 5px auto;
+  }
+}

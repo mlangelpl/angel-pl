@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2{
+  margin-bottom: 20px;
+  margin-top: 0;
+  
+}
+.navbar{  
+  display: flex;
+  justify-content: right;
+  padding-top: 10px;
+}
+.navbar-nav{
+  display: flex;
+}
+
+.nav-item{
+  list-style-type: none;
+  padding: 10px 20px;
+}
+
+.nav-item a{
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.nav-item a:hover{
+  color: #54b4f0;
+  transition: .3s;
+  
+}
+
+
+.contenedor {
+  background: linear-gradient(to top, #73a1c0 0%, #111936 100%);
+  width: 100%;
+  height: 100vh;
+}
+
+.lago {
+  position: absolute;
+  bottom: 0;
+  height: 120px;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    #1d425a 0%,
+    #125582 15%,
+    #75a0c1 51%,
+    #73a1c0 52%,
+    #125582 68%,
+    #1d425a 100%
+  );
+  overflow: hidden;
+}
+.enlaces{
+  height: 40px;
+}
+
+
+.stars div {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  background: radial-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+  width: 5px;
+  height: 5px;
+}
+
+.stars div:nth-child(1) {
+  left: 15%;
+  top: 30%;
+}
+.stars div:nth-child(5) {
+  left: 5%;
+  top: 55%;
+}
+.stars div:nth-child(3) {
+  left: 90%;
+  top: 60%;
+}
+
+
+.stars div:nth-child(2) {
+  left: 50%;
+  top: 22%;
+}
+
+.stars div:nth-child(4) {
+  left: 46%;
+  top: 28%;
+}
+
+.stars div:nth-child(6) {
+  left: 48%;
+  top: 25%;
+}
+
+.stars div:hover {
+  background: radial-gradient(rgb(220, 202, 113), rgba(255, 255, 255, 0));
+  transform: scale(2);
+  transition-duration: 0.5s;
+}
+
+.info-container {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 15px;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  text-align: center;
+  color: rgb(3, 10, 36);
+}
+.info-container h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.info-container h1 span {
+  font-family: "Adinda Melia";
+  color: #163461;
+  font-size: 4rem;
+}
+.enlaces a{
+  color: rgb(3, 10, 36);
+  text-decoration: none;
+
+}
+
+.enlaces a i {
+  font-size: 1.5rem;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.enlaces a i:hover {
+  color: #aac4f6;
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+}
+.navbar-toggler{
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar-toggler:hover, .navbar-toggler:active{
+  color: #4783de;
+  transition: .3s;
+} 
+
+
+@media screen and (max-width: 700px) {
+  .info-container h1 {
+    font-size: 2rem;
+  }
+  .info-container h1 span {
+    font-size: 3rem;
+  }
+  .navbar-nav{
+    flex-direction: column;
+    background-color: #101010;
+    display: none;
+    position: fixed;
+    top: 25px;
+
+ }
+.mostrar{
+  display: block;
+}
+
+ .navbar-toggler{
+   display: block;
+ }
+ .lago{
+   height: 140px;
+ }
+
+ .info-container{
+  width: 80%;
+}
+}
+
+
+@media screen and (max-width: 376px) {
+  
+  .info-container h1 {
+    font-size: 1rem;
+
+  }
+  .info-container h2 {
+    font-size: .8rem;
+
+  }
+
+  .info-container h1 span {
+    font-size: 2rem;
+  }
+
+  .lago{
+    height: 100px;
+  }
+  .enlaces a i{
+    font-size: .8rem;
+    margin-right: 10px;
+  }
+}
